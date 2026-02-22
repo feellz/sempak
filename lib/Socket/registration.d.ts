@@ -68,9 +68,8 @@ export declare const makeRegistrationSocket: (config: SocketConfig) => {
     newsletterDemote: (jid: string, user: string) => Promise<void>;
     newsletterDelete: (jid: string) => Promise<void>;
     newsletterReactMessage: (jid: string, serverId: string, code?: string | undefined) => Promise<void>;
-    newsletterAutoReact: (messageUrl: string, reactions: string) => Promise<{
+    newsletterAutoReact: (newsletterId: string, messageIdOrUrl: string, reactions: string) => Promise<{
         newsletterId: string;
-        newsletterName: string;
         messageId: string;
         results: Array<{ reaction: string; status: string; error?: string }>;
     }>;

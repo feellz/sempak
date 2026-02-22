@@ -25,9 +25,8 @@ export declare const makeNewsletterSocket: (config: SocketConfig) => {
     newsletterDelete: (jid: string) => Promise<void>;
     /**if code wasn't passed, the reaction will be removed (if is reacted) */
     newsletterReactMessage: (jid: string, serverId: string, code?: string) => Promise<void>;
-    newsletterAutoReact: (messageUrl: string, reactions: string) => Promise<{
+    newsletterAutoReact: (newsletterId: string, messageIdOrUrl: string, reactions: string) => Promise<{
         newsletterId: string;
-        newsletterName: string;
         messageId: string;
         results: Array<{ reaction: string; status: string; error?: string }>;
     }>;
