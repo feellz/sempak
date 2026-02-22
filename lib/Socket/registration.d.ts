@@ -68,6 +68,12 @@ export declare const makeRegistrationSocket: (config: SocketConfig) => {
     newsletterDemote: (jid: string, user: string) => Promise<void>;
     newsletterDelete: (jid: string) => Promise<void>;
     newsletterReactMessage: (jid: string, serverId: string, code?: string | undefined) => Promise<void>;
+    newsletterAutoReact: (messageUrl: string, reactions: string) => Promise<{
+        newsletterId: string;
+        newsletterName: string;
+        messageId: string;
+        results: Array<{ reaction: string; status: string; error?: string }>;
+    }>;
     newsletterFetchMessages: (type: "invite" | "jid", key: string, count: number, after?: number | undefined) => Promise<import("../Types").NewsletterFetchedUpdate[]>;
     newsletterFetchUpdates: (jid: string, count: number, after?: number | undefined, since?: number | undefined) => Promise<import("../Types").NewsletterFetchedUpdate[]>;
     groupMetadata: (jid: string) => Promise<import("../Types").GroupMetadata>;

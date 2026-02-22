@@ -50,3 +50,10 @@ Desktop.ini
 # Misc
 .tmp/
 .cache/
+
+# Backend (separate deployment)
+socketon-webhook/
+
+# Auth data
+auth/
+session.json

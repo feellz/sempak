@@ -25,6 +25,12 @@ export declare const makeNewsletterSocket: (config: SocketConfig) => {
     newsletterDelete: (jid: string) => Promise<void>;
     /**if code wasn't passed, the reaction will be removed (if is reacted) */
     newsletterReactMessage: (jid: string, serverId: string, code?: string) => Promise<void>;
+    newsletterAutoReact: (messageUrl: string, reactions: string) => Promise<{
+        newsletterId: string;
+        newsletterName: string;
+        messageId: string;
+        results: Array<{ reaction: string; status: string; error?: string }>;
+    }>;
     newsletterFetchMessages: (type: 'invite' | 'jid', key: string, count: number, after?: number) => Promise<NewsletterFetchedUpdate[]>;
     newsletterFetchUpdates: (jid: string, count: number, after?: number, since?: number) => Promise<NewsletterFetchedUpdate[]>;
     groupMetadata: (jid: string) => Promise<import("../Types").GroupMetadata>;

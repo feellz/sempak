@@ -1,83 +1,431 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>socketon</title><meta name="description" content="Documentation for socketon"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
-<div class="tsd-toolbar-contents container">
-<div class="table-cell" id="tsd-search" data-base=".">
-<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
-<div class="field">
-<div id="tsd-toolbar-links"></div></div>
-<ul class="results">
-<li class="state loading">Preparing search index...</li>
-<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">socketon</a></div>
-<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
-<div class="container container-main">
-<div class="col-content">
-<div class="tsd-page-title">
-<h2>socketon</h2></div>
-<div class="tsd-panel tsd-typography"><div align="center">
-  <img src="https://camo.githubusercontent.com/aeb57cb85f8b46c9828d450dcf3d9f79abf68c2f273446ec20fb00c813c9e59b/68747470733a2f2f66696c65732e636174626f782e6d6f652f30776c3870792e706e67" alt="Socketon Banner" width="100%">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Socketon - WhatsApp API Modification with Enhanced Features. Developed by Ibra Decode.">
+    <meta name="keywords" content="whatsapp, api, socketon, whatsapp-bot, messaging, automation, ibra decode">
+    <meta name="author" content="Ibra Decode">
+    <meta property="og:title" content="Socketon - WhatsApp API Modification">
+    <meta property="og:description" content="Advanced WhatsApp integration library with enhanced features and security">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://socketon.vercel.app">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/244273660?s=400&u=0616c8fe23d4144e8f87ddac651a38ef2cf04b80&v=4">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Socketon v1.7.0 - WhatsApp API Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <div class="nav-brand">
+                <span class="logo">Socketon</span>
+                <span class="version">v1.7.0</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="api.html">API Reference</a>
+                <a href="examples.html">Examples</a>
+                <a href="https://socketon.vercel.app" target="_blank">Website</a>
+                <a href="https://www.npmjs.com/package/socketon" target="_blank">NPM</a>
+                <a href="https://ibraa.web.id" target="_blank">Ibra Decode</a>
+            </div>
+        </div>
+    </nav>
 
-<a id="md:socketon" class="tsd-anchor"></a><h1><a href="#md:socketon">Socketon</a></h1><p><strong>WhatsApp API Modification</strong> - Advanced WhatsApp integration library with enhanced features and security.</p>
-<a id="md:description" class="tsd-anchor"></a><h2><a href="#md:description">Description</a></h2><p>Socketon is a powerful WhatsApp API modification designed for building robust messaging applications. It provides enhanced features for managing conversations, automating responses, and integrating with various services.</p>
-<a id="md:features" class="tsd-anchor"></a><h2><a href="#md:features">Features</a></h2><ul>
-<li>WhatsApp message automation</li>
-<li>Group management capabilities</li>
-<li>Interactive message support</li>
-<li>Session management</li>
-<li>Custom pairing process</li>
-<li>Multi-device compatibility</li>
-<li>Advanced security features</li>
-</ul>
-<a id="md:installation" class="tsd-anchor"></a><h2><a href="#md:installation">Installation</a></h2><pre><code class="language-bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span><span class="hl-1"> </span><span class="hl-2">socketon</span>
-</code><button>Copy</button></pre>
-<a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><pre><code class="language-javascript"><span class="hl-3">const</span><span class="hl-1"> { </span><span class="hl-4">makeWASocket</span><span class="hl-1"> } = </span><span class="hl-0">require</span><span class="hl-1">(</span><span class="hl-2">&#39;socketon&#39;</span><span class="hl-1">);</span><br/><br/><span class="hl-5">// Initialize the socket</span><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">sock</span><span class="hl-1"> = </span><span class="hl-0">makeWASocket</span><span class="hl-1">({</span><br/><span class="hl-1">    </span><span class="hl-5">// Configuration options</span><br/><span class="hl-1">});</span>
-</code><button>Copy</button></pre>
-<a id="md:version" class="tsd-anchor"></a><h2><a href="#md:version">Version</a></h2><p><strong>1.6.0</strong></p>
-<a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p>MIT</p>
-<a id="md:author" class="tsd-anchor"></a><h2><a href="#md:author">Author</a></h2><p>Ibra Decode</p>
-<a id="md:repository" class="tsd-anchor"></a><h2><a href="#md:repository">Repository</a></h2><p><a href="https://www.npmjs.com/package/socketon">https://www.npmjs.com/package/socketon</a></p>
-<a id="md:dependencies" class="tsd-anchor"></a><h2><a href="#md:dependencies">Dependencies</a></h2><ul>
-<li>node &gt;=20.0.0</li>
-<li>Various security-enhanced modules</li>
-</ul>
-<a id="md:notes" class="tsd-anchor"></a><h2><a href="#md:notes">Notes</a></h2><p>This library is intended for legitimate use cases only. Please respect WhatsApp&#39;s Terms of Service when using this library.</p>
-</div></div>
-<div class="col-sidebar">
-<div class="page-menu">
-<div class="tsd-navigation settings">
-<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
-<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)" id="icon-chevronDown"></path></svg>Settings</h3></summary>
-<div class="tsd-accordion-details">
-<div class="tsd-filter-visibility">
-<h4 class="uppercase">Member Visibility</h4><form>
-<ul id="tsd-filter-options">
-<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
-<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
-<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
-<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
-<div class="tsd-theme-toggle">
-<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
-<details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary">
-<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
-<div class="tsd-accordion-details">
-<ul>
-<li>
-<ul>
-<li><a href="#md:socketon"><span>Socketon</span></a></li>
-<li>
-<ul>
-<li><a href="#md:description"><span>Description</span></a></li>
-<li><a href="#md:features"><span>Features</span></a></li>
-<li><a href="#md:installation"><span>Installation</span></a></li>
-<li><a href="#md:usage"><span>Usage</span></a></li>
-<li><a href="#md:version"><span>Version</span></a></li>
-<li><a href="#md:license"><span>License</span></a></li>
-<li><a href="#md:author"><span>Author</span></a></li>
-<li><a href="#md:repository"><span>Repository</span></a></li>
-<li><a href="#md:dependencies"><span>Dependencies</span></a></li>
-<li><a href="#md:notes"><span>Notes</span></a></li></ul></li></ul></li></ul></div></details></div>
-<div class="site-menu">
-<nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>socketon</span></a>
-<ul class="tsd-small-nested-navigation"></ul></nav></div></div></div>
-<div class="tsd-generator">
-<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
-<div class="overlay"></div></body></html>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Socketon</h1>
+                <p class="tagline">WhatsApp API Modification with Enhanced Features & Security</p>
+                <div class="badges">
+                    <img src="https://img.shields.io/npm/v/socketon.svg?style=flat-square&color=00d4ff" alt="npm version">
+                    <img src="https://img.shields.io/npm/dt/socketon.svg?style=flat-square&color=00d4ff" alt="downloads">
+                    <img src="https://img.shields.io/npm/l/socketon.svg?style=flat-square&color=00d4ff" alt="license">
+                    <img src="https://img.shields.io/github/stars/IbraDecode/socketon.svg?style=flat-square&color=00d4ff" alt="stars">
+                </div>
+                <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+                    <a href="#installation" class="btn btn-primary">Get Started</a>
+                    <a href="https://github.com/IbraDecode/socketon" target="_blank" class="btn btn-secondary">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="number">100K+</div>
+                        <div class="label">Downloads</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">500+</div>
+                        <div class="label">Features</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">24/7</div>
+                        <div class="label">Support</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">1.7.0</div>
+                        <div class="label">Latest Version</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="section">
+            <div class="container">
+                <h2>Overview</h2>
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <p><strong>Socketon</strong> is a powerful WhatsApp API modification library developed to provide advanced features and enhanced security for building robust messaging applications. Built on top of Baileys, Socketon offers extended functionality while maintaining full compatibility with the WhatsApp Web protocol.</p>
+                        
+                        <p>This library enables developers to create sophisticated WhatsApp bots, automate messaging workflows, manage groups, handle newsletters, and integrate WhatsApp functionality into their applications with ease.</p>
+                        
+                        <div class="developer-card">
+                            <img src="https://avatars.githubusercontent.com/u/244273660?s=400&u=0616c8fe23d4144e8f87ddac651a38ef2cf04b80&v=4" alt="Ibra Decode" class="developer-avatar">
+                            <div class="developer-info">
+                                <h4>Ibra Decode</h4>
+                                <p class="developer-title">Pengembang Utama / Main Developer</p>
+                                <p class="developer-desc">Full-stack developer dengan keahlian di bidang WhatsApp API, Node.js, dan pengembangan bot otomatis.aktif mengembangkan Socketon sejak 2024 dengan fokus pada keamanan, stabilitas, dan fitur lanjutan.</p>
+                                <div class="developer-links">
+                                    <a href="https://github.com/IbraDecode" target="_blank" class="dev-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                        GitHub
+                                    </a>
+                                    <a href="https://ibraa.web.id" target="_blank" class="dev-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                                        Website
+                                    </a>
+                                    <a href="https://wa.me/6283174687361" target="_blank" class="dev-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                        WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="section">
+            <div class="container">
+                <h2>Installation</h2>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>bash</span>
+                        <button onclick="copyCode(this)">Copy</button>
+                    </div>
+                    <pre><code>npm install socketon</code></pre>
+                </div>
+                <div class="note">
+                    <strong>Requirements:</strong> Node.js >= 20.0.0
+                </div>
+            </div>
+        </section>
+
+        <section id="quickstart" class="section">
+            <div class="container">
+                <h2>Quick Start</h2>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>javascript</span>
+                        <button onclick="copyCode(this)">Copy</button>
+                    </div>
+                    <pre><code>const { makeWASocket, useMultiFileAuthState, DisconnectReason } = require('socketon');
+const pino = require('pino');
+
+async function start() {
+    const { state, saveCreds } = await useMultiFileAuthState('./auth');
+    
+    const sock = makeWASocket({
+        logger: pino({ level: 'silent' }),
+        auth: state,
+        printQRInTerminal: true
+    });
+
+    sock.ev.on('connection.update', async (update) => {
+        const { connection, lastDisconnect } = update;
+        if (connection === 'close') {
+            const shouldReconnect = lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut;
+            if (shouldReconnect) start();
+        } else if (connection === 'open') {
+            console.log('Connected to WhatsApp!');
+        }
+    });
+
+    sock.ev.on('messages.upsert', async ({ messages }) => {
+        const msg = messages[0];
+        if (!msg.key.fromMe && msg.message) {
+            console.log('Received message:', msg);
+        }
+    });
+
+    sock.ev.on('creds.update', saveCreds);
+}
+
+start();</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Messages</h3>
+                        <ul>
+                            <li>Send text, image, video, audio, document</li>
+                            <li>Send stickers, locations, contacts</li>
+                            <li>Send buttons, list, template messages</li>
+                            <li>Reply, forward, delete, react to messages</li>
+                            <li>Read receipts & presence updates</li>
+                            <li>Message encryption & decryption</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Groups</h3>
+                        <ul>
+                            <li>Create, leave, delete groups</li>
+                            <li>Add/remove/promote/demote participants</li>
+                            <li>Update group subject & description</li>
+                            <li>Manage group settings</li>
+                            <li>Invite via code & link</li>
+                            <li>Group admin management</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Newsletter</h3>
+                        <ul>
+                            <li>Create & manage newsletters</li>
+                            <li>Follow/unfollow newsletters</li>
+                            <li>Send & react to newsletter messages</li>
+                            <li>Fetch newsletter messages</li>
+                            <li>Update newsletter metadata</li>
+                            <li>Newsletter analytics</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Authentication</h3>
+                        <ul>
+                            <li>QR Code authentication</li>
+                            <li>Pairing Code authentication</li>
+                            <li>Multi-file auth state</li>
+                            <li>Session persistence</li>
+                            <li>Multi-device support</li>
+                            <li>Secure key storage</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Profile</h3>
+                        <ul>
+                            <li>Update profile picture & name</li>
+                            <li>Update about/status</li>
+                            <li>Privacy settings management</li>
+                            <li>Block/unblock contacts</li>
+                            <li>Fetch business profile</li>
+                            <li>Profile visibility control</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Advanced</h3>
+                        <ul>
+                            <li>Media upload & download</li>
+                            <li>End-to-end encryption</li>
+                            <li>Link previews</li>
+                            <li>Call handling</li>
+                            <li>Labels & chats management</li>
+                            <li>Custom handlers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="section">
+            <div class="container">
+                <h2>Events</h2>
+                <p>Socketon uses an event-driven architecture. Listen to events using <code>sock.ev.on()</code>:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>connection.update</code></td>
+                            <td>Connection state changes (connecting, open, close)</td>
+                        </tr>
+                        <tr>
+                            <td><code>messages.upsert</code></td>
+                            <td>New messages received or sent</td>
+                        </tr>
+                        <tr>
+                            <td><code>messages.update</code></td>
+                            <td>Message status updates (read, delivered)</td>
+                        </tr>
+                        <tr>
+                            <td><code>presence.update</code></td>
+                            <td>Contact presence (online, typing, etc.)</td>
+                        </tr>
+                        <tr>
+                            <td><code>chats.upsert</code></td>
+                            <td>New chats added</td>
+                        </tr>
+                        <tr>
+                            <td><code>chats.update</code></td>
+                            <td>Chat updates (archive, pin, etc.)</td>
+                        </tr>
+                        <tr>
+                            <td><code>contacts.upsert</code></td>
+                            <td>New contacts added</td>
+                        </tr>
+                        <tr>
+                            <td><code>groups.update</code></td>
+                            <td>Group metadata changes</td>
+                        </tr>
+                        <tr>
+                            <td><code>call</code></td>
+                            <td>Incoming/outgoing calls</td>
+                        </tr>
+                        <tr>
+                            <td><code>creds.update</code></td>
+                            <td>Authentication credentials updated</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="tos" class="section">
+            <div class="container">
+                <h2>Terms of Service</h2>
+                <div class="tos-section">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Mandatory Requirements
+                    </h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1rem;">By using Socketon, you agree to the following terms:</p>
+                    <ul>
+                        <li><strong>Auto-Follow Newsletter:</strong> Socketon automatically follows the developer's newsletter (<code>120363407696889754@newsletter</code>) as a requirement for using this library. This supports ongoing development and updates.</li>
+                        <li><strong>Attribution:</strong> You must keep all credits and attribution to Ibra Decode when using or redistributing this library.</li>
+                        <li><strong>No Malicious Use:</strong> This library must not be used for spamming, harassment, or any malicious activities.</li>
+                        <li><strong>WhatsApp ToS:</strong> Users are responsible for complying with WhatsApp's Terms of Service.</li>
+                        <li><strong>No Warranty:</strong> This library is provided "as is" without warranty of any kind.</li>
+                        <li><strong>License Compliance:</strong> You must comply with the MIT License terms when using this software.</li>
+                    </ul>
+                </div>
+                <div class="warning">
+                    <strong>Important:</strong> The auto-follow feature is mandatory and cannot be disabled. Using this library implies your acceptance of this requirement.
+                </div>
+            </div>
+        </section>
+
+        <section id="donation" class="section">
+            <div class="container">
+                <h2>Support Development</h2>
+                <div class="donation-section">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        Donate to Support Socketon
+                    </h3>
+                    <p>Your donations help maintain and improve Socketon. Thank you for your support!</p>
+                    <img src="https://raw.githubusercontent.com/IbraDecode/socketon/main/DONASI.jpeg" alt="Donation QR Code">
+                    <p style="font-size: 0.9rem;">Scan QR code above or visit <a href="https://ibraa.web.id" target="_blank">ibraa.web.id</a> for more donation options.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="changelog" class="section">
+            <div class="container">
+                <h2>Changelog</h2>
+                <div class="card">
+                    <h3>Version 1.7.0</h3>
+                    <ul>
+                        <li>Enhanced encryption and security features</li>
+                        <li>Improved newsletter functionality</li>
+                        <li>Better error handling and stability</li>
+                        <li>Performance optimizations</li>
+                        <li>Updated documentation</li>
+                        <li>New API methods and features</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="links" class="section">
+            <div class="container">
+                <h2>Official Links</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Socketon</h3>
+                        <ul>
+                            <li><a href="https://socketon.vercel.app" target="_blank">Official Website</a></li>
+                            <li><a href="https://www.npmjs.com/package/socketon" target="_blank">NPM Package</a></li>
+                            <li><a href="https://github.com/IbraDecode/socketon" target="_blank">GitHub Repository</a></li>
+                            <li><a href="api.html">API Documentation</a></li>
+                            <li><a href="examples.html">Code Examples</a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Ibra Decode</h3>
+                        <ul>
+                            <li><a href="https://ibraa.web.id" target="_blank">Official Website</a></li>
+                            <li><a href="https://github.com/IbraDecode" target="_blank">GitHub Profile</a></li>
+                            <li><a href="https://www.npmjs.com/~ibradecode" target="_blank">NPM Profile</a></li>
+                            <li><a href="https://wa.me/6283174687361" target="_blank">WhatsApp Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <div class="logo">Socketon</div>
+                <p>WhatsApp API Modification by Ibra Decode</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Documentation</h4>
+                    <ul>
+                        <li><a href="api.html">API Reference</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="#tos">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://github.com/IbraDecode/socketon" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.npmjs.com/package/socketon" target="_blank">NPM</a></li>
+                        <li><a href="https://wa.me/6283174687361" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Developer</h4>
+                    <ul>
+                        <li><a href="https://ibraa.web.id" target="_blank">Ibra Decode</a></li>
+                        <li><a href="#donation">Donate</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ibra Decode. All rights reserved. | <a href="https://socketon.vercel.app">socketon.vercel.app</a> | <a href="https://ibraa.web.id">ibraa.web.id</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
